@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/myorder.css">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="icon" href="Media/sofa-icon.png">
+    <title>Order</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="Media/logo-nav.png" alt="Logo"/>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul class="no-bullets">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="donate.html"></i>Donation</a></li>
+                    <li><a href="myorder.html"></i>My orders</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="aboutus.html"></i>About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="empty">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h2>Your cart is empty</h2>
+        <p>Looks like you haven’t added anything yet.</p>
+        <p>Let’s fix that </p>
+        <button onclick="window.location.href='Products.html'" >Continue Shopping <i class="fa-solid fa-basket-shopping"></i></button>
+    </div>
+        <div id="orderContainer" class="image-container"></div>
+    <!-- Make Order Button -->
+    <div class="order">
+        <button id="orderSummary" class="pay">
+            <span class="text">Order Summary</span>
+            <i class="fa-solid fa-clipboard-list icon"></i> 
+            <span class="circle"></span>
+        </button>
+        <button class="pay" onclick="window.location.href='payment.html'">
+            <span class="text">Pay Now</span>
+            <i class="fa-solid fa-credit-card icon"></i>
+            <span class="circle"></span>
+        </button>
+    </div>
+    <div class="modal" id="modal">
+        <div class="summary">
+            <i class="fa-solid fa-xmark" id="close"></i>
+            <div class="head">
+                <img src="Media/summary.png" alt="">
+                <h3>Order Summary </h3>
+            </div>
+            <div class="items">
+                
+            </div>
+            <div class="calc">
+                <div class="subTotal">
+                    <p>Subtotal</p>
+                    <p> </p>
+                </div>
+                <div class="shipping">
+                    <p><i class="fa-solid fa-truck-fast"></i>Shipping</p>
+                    <p>600 EGP</p>
+                </div>
+
+                <div class="discount">
+                    <p><i class="fa-solid fa-tags"></i>Discount</p>
+                    <p>200 EGP</p>
+                </div>
+            </div>
+            <div class="total">
+                <p>Total</p>
+                <p>8500 EGP</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="logo-container">
+                <img src="Media/logo-footer.png" alt="logo" class="image"/>
+            </div>
+            <div class="ps">
+                <p><i class="fa-solid fa-phone"></i> Phone : +123456789</p>
+                <p><i class="fa-solid fa-map-pin"></i> Location : Alexandria, Egypt</p>
+                <p>Giving old Furniture a new life through creativity and sustainability</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/global.js"></script>
+    <script src="JS/myorder.js"></script>
+</body>
+</html>
